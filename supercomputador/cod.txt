@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -N data
+### Output files
+#PBS -e data.err
+#PBS -o data.log
+### Mail to user
+#PBS -M jec3430@gmail.com
+### Queue name (small, medium, long, verylong) batch is default queue
+#PBS -q batch
+#PBS -l nodes=3:ppn=16
+
+./data
+
